@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas Facul</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="index.html"><img src="img/book.svg" alt="book" id="logo"></a>
+            <nav class="navbar">
+                <a href="">Home</a>
+                <a href="movies.html" class="active">Filmes</a>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="content">
+            <h1>Lista de Filmes</h1>
+            <div class="movieDatas">
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+                <label for="genre">Gênero</label>
+                <input type="text" id="genre">
+                <label for="url">Img Url</label>
+                <input type="text" id="url">
+            </div>
+            <div class="controls">
+                <button id="add" onclick="addMovie()"><b>Add</b></button>
+                <button id="show" onclick="showMovies()"><b>All movies</b></button>
+                <button id="removeL" onclick="removeLast()"><b>Remove Last</b></button>
+                <button id="removeBN" onclick="removeByName()"><b>Remove by name</b></button>
+                <button id="searchButton" onclick="search()"><b>search</b></button>
+            </div>
+            <div class="movies" id="movies"></div>
+        </div>
+    </main>
+    <footer>
+        <h3>Murilo Francisco Matos</h3>
+        <h3>@murilo.fmatos</h3>
+    </footer>
+
+</body>
+<script src="JS/main.js"></script>
+</html>
