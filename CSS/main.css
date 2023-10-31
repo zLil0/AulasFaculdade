@@ -26,7 +26,6 @@ body>header{
     display: flex;
     background:#202020;
     width: 100%;
-    margin-bottom: 20px;
 }
 .navbar{
     display: flex;
@@ -83,12 +82,22 @@ body>footer{
     margin: 10px 0;
     cursor: pointer;
 }
-main{
-    height: 100%;
+.sidebar{
+    min-height: 80vh;
+    width: 300px;
     background: #e5e5e5;
+    padding: 20px;
+}
+main.wrapper{
+    margin: 20px 0;
+    min-height: 80vh;
+    display:flex;
+    gap: 20px;
 }
 main .content{
-    margin: 20px;    
+    width: 100%;
+    background: #e5e5e5;
+    padding: 20px;
 }
 .movies{
     display: flex;
