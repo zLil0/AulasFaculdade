@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 800px;
+    height: 800px;
+    background: #e5e5e5;
+    padding: 20px;
+}
+.movies{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.card.movie img{
+    width: 170px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card.movie{
+    width: 170px;
+    background: grey;
+    border-radius: 10px;
+}
+.card.movie:hover{
+    transform: scale(1.05);
+    transition: .4s ease;
+    box-shadow: 0 0 2px 2px #202020;
+}
+
+.movieTitle{
+    font-size: 110%;
+}
+
+.movieGenre{
+    font-size: 100%;
+}
+
+.cardText{
+    padding: 10px;
+}
+.controls{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    justify-content: center;
+}
+.controls button{
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    background: #ff6702;
+}
+.controls button:hover{
+    background: #ff6702a1;
+    transition: .4s;
+}
+
+.movieDatas{
+    padding: 10px;
+    margin-top: 20px;
+}
+.movieDatas input{
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.movieDatas label{
+    font-size: 20px;
+}
+.card.movie h4{
+    background: #ff6702;
+    width: max-content;
+    padding: 3px 7px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
