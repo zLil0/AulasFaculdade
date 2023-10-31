@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas Facul</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Lista de Filmes</h1>
+        <div class="movieDatas">
+            <label for="name">Nome: </label>
+            <input type="text" id="name">
+            <label for="genre">Gênero: </label>
+            <input type="text" id="genre">
+            <label for="url">Img Url: </label>
+            <input type="text" id="url">
+        </div>
+        <div class="controls">
+            <button id="add" onclick="addMovie()">Add</button>
+            <button id="show" onclick="showMovies()">All movies</button>
+            <button id="removeL" onclick="removeLast()">Remove Last</button>
+            <button id="removeBN" onclick="removeByName()">Remove by name</button>
+        </div>
+        <div class="movies" id="movies">
+            <div class="card movie">
+                <img src="https://legadodamarvel.com.br/wp-content/uploads/2021/12/Homem-Aranha-Atraves-do-Aranhaverso-poster-legadodamarvel.jpg" alt="Cartaz">
+                <div class="cardText">
+                    <h3 class="movieTitle">Homem Aranha</h3>
+                    <h4 class="movieGenre">Aventura</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+<script src="JS/main.js"></script>
+</html>
